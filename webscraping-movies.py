@@ -23,3 +23,12 @@ print(title.text)
 ##
 ##
 
+movie_rows = soup.findAll('tr')
+
+
+for i in range(1,6):
+    td = movie_rows[i].findall('td')
+    name = td[1].text
+    print(name)
+
+
